@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Ultimate Tic Tac Toe</title>
+</head>
+<body>
+    <div class="title">
+        <h1>The Ultimate Tic Tac Toe</h1>
+        <h2>It is the Blue player's turn right now! Please select a spot in the highlighted box !!</h2>
+    </div>
+    <div class="mainGB">
+        <div class="spot1">
+            <div class="cell" data-big="1" data-small="1"></div>
+            <div class="cell" data-big="1" data-small="2"></div>
+            <div class="cell" data-big="1" data-small="3"></div>
+            <div class="cell" data-big="1" data-small="4"></div>
+            <div class="cell" data-big="1" data-small="5"></div>
+            <div class="cell" data-big="1" data-small="6"></div>
+            <div class="cell" data-big="1" data-small="7"></div>
+            <div class="cell" data-big="1" data-small="8"></div>
+            <div class="cell" data-big="1" data-small="9"></div>
+        </div>
+
+        <div class="spot2">
+            <div class="cell" data-big="2" data-small="1"></div>
+            <div class="cell" data-big="2" data-small="2"></div>
+            <div class="cell" data-big="2" data-small="3"></div>
+            <div class="cell" data-big="2" data-small="4"></div>
+            <div class="cell" data-big="2" data-small="5"></div>
+            <div class="cell" data-big="2" data-small="6"></div>
+            <div class="cell" data-big="2" data-small="7"></div>
+            <div class="cell" data-big="2" data-small="8"></div>
+            <div class="cell" data-big="2" data-small="9"></div>
+        </div>
+
+        <div class="spot3">
+            <div class="cell" data-big="3" data-small="1"></div>
+            <div class="cell" data-big="3" data-small="2"></div>
+            <div class="cell" data-big="3" data-small="3"></div>
+            <div class="cell" data-big="3" data-small="4"></div>
+            <div class="cell" data-big="3" data-small="5"></div>
+            <div class="cell" data-big="3" data-small="6"></div>
+            <div class="cell" data-big="3" data-small="7"></div>
+            <div class="cell" data-big="3" data-small="8"></div>
+            <div class="cell" data-big="3" data-small="9"></div>
+        </div>
+
+        <div class="spot4">
+            <div class="cell" data-big="4" data-small="1"></div>
+            <div class="cell" data-big="4" data-small="2"></div>
+            <div class="cell" data-big="4" data-small="3"></div>
+            <div class="cell" data-big="4" data-small="4"></div>
+            <div class="cell" data-big="4" data-small="5"></div>
+            <div class="cell" data-big="4" data-small="6"></div>
+            <div class="cell" data-big="4" data-small="7"></div>
+            <div class="cell" data-big="4" data-small="8"></div>
+            <div class="cell" data-big="4" data-small="9"></div>
+        </div>
+
+        <div class="spot5">
+            <div class="cell" data-big="5" data-small="1"></div>
+            <div class="cell" data-big="5" data-small="2"></div>
+            <div class="cell" data-big="5" data-small="3"></div>
+            <div class="cell" data-big="5" data-small="4"></div>
+            <div class="cell" data-big="5" data-small="5"></div>
+            <div class="cell" data-big="5" data-small="6"></div>
+            <div class="cell" data-big="5" data-small="7"></div>
+            <div class="cell" data-big="5" data-small="8"></div>
+            <div class="cell" data-big="5" data-small="9"></div>
+        </div>
+
+        <div class="spot6">
+            <div class="cell" data-big="6" data-small="1"></div>
+            <div class="cell" data-big="6" data-small="2"></div>
+            <div class="cell" data-big="6" data-small="3"></div>
+            <div class="cell" data-big="6" data-small="4"></div>
+            <div class="cell" data-big="6" data-small="5"></div>
+            <div class="cell" data-big="6" data-small="6"></div>
+            <div class="cell" data-big="6" data-small="7"></div>
+            <div class="cell" data-big="6" data-small="8"></div>
+            <div class="cell" data-big="6" data-small="9"></div>
+        </div>
+
+        <div class="spot7">
+            <div class="cell" data-big="7" data-small="1"></div>
+            <div class="cell" data-big="7" data-small="2"></div>
+            <div class="cell" data-big="7" data-small="3"></div>
+            <div class="cell" data-big="7" data-small="4"></div>
+            <div class="cell" data-big="7" data-small="5"></div>
+            <div class="cell" data-big="7" data-small="6"></div>
+            <div class="cell" data-big="7" data-small="7"></div>
+            <div class="cell" data-big="7" data-small="8"></div>
+            <div class="cell" data-big="7" data-small="9"></div>
+        </div>
+
+        <div class="spot8">
+            <div class="cell" data-big="8" data-small="1"></div>
+            <div class="cell" data-big="8" data-small="2"></div>
+            <div class="cell" data-big="8" data-small="3"></div>
+            <div class="cell" data-big="8" data-small="4"></div>
+            <div class="cell" data-big="8" data-small="5"></div>
+            <div class="cell" data-big="8" data-small="6"></div>
+            <div class="cell" data-big="8" data-small="7"></div>
+            <div class="cell" data-big="8" data-small="8"></div>
+            <div class="cell" data-big="8" data-small="9"></div>
+        </div>
+
+        <div class="spot9">
+            <div class="cell" data-big="9" data-small="1"></div>
+            <div class="cell" data-big="9" data-small="2"></div>
+            <div class="cell" data-big="9" data-small="3"></div>
+            <div class="cell" data-big="9" data-small="4"></div>
+            <div class="cell" data-big="9" data-small="5"></div>
+            <div class="cell" data-big="9" data-small="6"></div>
+            <div class="cell" data-big="9" data-small="7"></div>
+            <div class="cell" data-big="9" data-small="8"></div>
+            <div class="cell" data-big="9" data-small="9"></div>
+        </div>
+
+    </div>
+
+    <script>
+        let clickable = "5";
+
+        spot = document.querySelector(".spot5");
+        spot.style.boxShadow = "0 0 25px 5px rgba(0, 0, 0, 0.75)";
+        spot.style.backgroundColor = "rgba(140, 140, 140, 0.4)";
+
+        document.querySelectorAll('.mainGB div > div').forEach(cell => {
+            cell.addEventListener('click', () => {
+                const big = cell.dataset.big;
+                const small = cell.dataset.small;
+
+            if (big !== clickable) {
+                return;
+            }
+
+                fetch('/check', {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({
+                        big: big,
+                        small: small
+                    })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+
+                    if (data.canPlay){
+                        const playerColor = data.currentPlayer === "1" ? "#3786ed" : "#ed3737";
+                        const nextPlayerColorName = data.currentPlayer === "1" ? "Red" : "Blue";
+                        clickable = data.nextBig;
+
+                        spot.style.backgroundColor = "#f0f0f0"
+                        spot.style.boxShadow = "none"
+
+                        spot_name = `.spot${data.nextBig}`
+                        spot = document.querySelector(spot_name);
+                        spot.style.boxShadow = "0 0 25px 5px rgba(0, 0, 0, 0.75)";
+                        spot.style.backgroundColor = "rgba(140, 140, 140, 0.4)";
+
+                        document.querySelector(`[data-big="${big}"][data-small="${small}"]`).style.backgroundColor = playerColor;
+                        document.querySelector("h2").innerHTML = `It is the ${nextPlayerColorName} player's turn right now! Please select a spot in the highlighted box !!`;
+                    }
+                    else {
+                        if (data.winner == "1" || data.winner == "2") {
+                            playerColor = data.currentPlayer === "1" ? "#3786ed" : "#ed3737";
+                            const playerColorName = data.currentPlayer === "1" ? "Blue" : "Red";
+                            document.querySelector(`[data-big="${big}"][data-small="${small}"]`).style.backgroundColor = playerColor;
+                            document.querySelector("h2").innerHTML = `The ${playerColorName} player has won, amazing job !!`;
+                            return;
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
